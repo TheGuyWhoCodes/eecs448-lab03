@@ -1,0 +1,54 @@
+:root{
+    --secondary-bg-background:#f5823f;
+    --main-bg-background:#f3703c;
+    --main-font-color: #fff;
+}
+body{
+    font-family: 'Roboto' ;
+    color:var(--main-font-color);
+    background-size: 100%;
+    background: radial-gradient(circle, var(--secondary-bg-background) , var(--main-bg-background));
+}
+
+#title {
+    font-size:3em;
+    font-family: 'Oswald';
+    font-weight:700;
+}
+.container {
+    text-align: center;
+    width:800px;
+    margin:auto;
+}
+.prof {
+    border-radius:50%;
+    height:250px;
+    width:250px;
+    background-image: url("https://img.pokemondb.net/artwork/large/charmander.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+p {
+    font-size:1.6em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:inherit;
+}
+.web-container {
+    background-color:#fff;
+    width:400px;
+    height:200px;
+    color: #383838;
+    margin:auto;
+}
