@@ -4,6 +4,8 @@ let three = "img/3.jpg";
 let four = "img/4.jpg";
 let five = "img/5.jpg";
 
+let state = "1"
+
 let back = document.getElementById("back");
 let forward = document.getElementById("forward");
 document.getElementById("img").height=200;
@@ -11,50 +13,60 @@ document.getElementById("img").width=200;
 
 back.addEventListener("click", e => {
     let img = document.getElementById("img").src;
-    if(img == one) {
+    if(state == "1") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = five;
-    } else if(img == two) {
+        state = "5"
+    } else if(state == "2") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = one;
-    } else if(img == three) {
+        state = "1"
+    } else if(state == "3") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = two
-    } else if(img == four) {
+        state = "2"
+    } else if(state == "4") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = three
-    } else if(img == five) {
+        state = "3"
+    } else if(state == "5") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = four 
+        state = "4"
     }
 })
 
 forward.addEventListener("click", e => {
     let img = document.getElementById("img").src;
-    if(img == one) {
+    if(state == "1") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = two;
-    } else if(img == two) {
+        state = "2"
+    } else if(state == "2") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = three;
-    } else if(img == three) {
+        state = "3"
+    } else if(state == "3") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = four
-    } else if(img == four) {
+        state = "4"
+    } else if(state == "4") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
         document.getElementById("img").src = five
-    } else if(img == five) {
+        state = "5"
+    } else if(state == "5") {
         document.getElementById("img").height=200;
         document.getElementById("img").width=200;
-        document.getElementById("img").src = one 
+        document.getElementById("img").src = one
+        state = "1" 
     }
 })
