@@ -1,8 +1,8 @@
-let one = "file:///Users/chris/Desktop/lab3/exercise2/img/1.jpg";
-let two = "file:///Users/chris/Desktop/lab3/exercise2/img/2.jpg";
-let three = "file:///Users/chris/Desktop/lab3/exercise2/img/3.jpg";
-let four = "file:///Users/chris/Desktop/lab3/exercise2/img/4.jpg";
-let five = "file:///Users/chris/Desktop/lab3/exercise2/img/5.jpg";
+let one = "img/1.jpg";
+let two = "img/2.jpg";
+let three = "img/3.jpg";
+let four = "img/4.jpg";
+let five = "img/5.jpg";
 
 let back = document.getElementById("back");
 let forward = document.getElementById("forward");

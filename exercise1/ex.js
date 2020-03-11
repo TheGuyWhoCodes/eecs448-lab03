@@ -5,5 +5,7 @@ document.getElementById("submit").addEventListener("click", e => {
         alert("the passwords are not at least 8 characters long")
     } else if(one != two) {
         alert("the passwords are not the same");
+    } else if(one == two) {
+        alert("SUCCESS!");
     }
 })
